@@ -88,3 +88,55 @@ body {
     cursor: pointer;
 }
 
+/* Add this CSS for responsiveness */
+@media screen and (max-width: 768px) {
+    .quote-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quote-box h2 {
+        font-size: 24px;
+    }
+
+    .quote-box blockquote {
+        font-size: 18px;
+    }
+
+    .quote-box span::before {
+        left: -20px;
+    }
+
+    .quote-box button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quote-box {
+        padding: 10px;
+    }
+
+    .quote-box h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .quote-box blockquote {
+        font-size: 16px;
+    }
+
+    .quote-box span::before {
+        left: -15px;
+    }
+
+    .quote-box button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+
